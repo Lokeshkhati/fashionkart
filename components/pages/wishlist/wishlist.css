@@ -1,0 +1,29 @@
+.wishlist {
+    margin: 5rem;
+  }
+  
+  .wishlist-heading {
+    margin-top: 12rem;
+  }
+  .wish {
+    color: var(--danger-color);
+  }
+  
+  .whislist-item {
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--rating-color);
+    border-radius: 50%;
+    position: absolute;
+    top: -0.8rem;
+    left: 2rem;
+    border: 2px solid var(--light-color);
+    font-size: 1.2rem;
+    color: var(--light-color);
+  }
+  
+  .nav-icons li {
+    position: relative;
+  }
+  
+  
