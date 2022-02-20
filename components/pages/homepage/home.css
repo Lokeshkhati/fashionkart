@@ -1,0 +1,38 @@
+.category {
+    width: 100%;
+    gap: 2rem;
+  }
+  .card {
+    width: 20rem;
+  }
+  .home-product {
+    width: 15.625rem;
+  }
+  .card img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .page-heading{
+    color: var(--dark-color);
+    text-transform: uppercase;
+  }
+  .footer {
+    background-color: var(--dark-color);
+    min-height: 15rem;
+  }
+  
+  .footer-heading {
+    color: var(--light-gray);
+  }
+  .quick-links li > a:hover {
+    text-decoration: underline;
+  }
+  .footer-container a {
+    color: var(--light-gray);
+  }
+  .products {
+    gap: 1.4rem;
+    margin: 5.5rem 0;
+  }
+  
+  
