@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
+
+@import url("/components/pages/product/wishlist.css");
+
 @import url("/components/pages/product/navbar.css");
 @import url("/components/pages/product/searchbar.css");
 @import url("/components/pages/product/product.css");
+
