@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+
+    <!-- Favicon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <!-- SlickUI -->
+    <link rel="stylesheet" href="https://slickui-component-library.netlify.app/style.css">
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="nav d-flex jc-sb align-ctr">
+        <a href="/components/Home/home.html" class="logo font-lg">
+            Fashionkart
+        </a>
+        <ul class="nav-links  list-none  d-flex">
+            <li>
+                <a href="/components/Home/home.html" class="fonts-md margin-sm">Home</a>
+            </li>
+            <li>
+                <a href="./product.html" class="fonts-md margin-sm">Products</a>
+            </li>
+            <li>
+                <a href="/components/Wishlist/wishlist.html" class="fonts-md margin-sm">Wishlist</a>
+            </li>
+            <li>
+                <a href="/components/Cart/cart.html" class="fonts-md margin-sm">Cart</a>
+            </li>
+        </ul>
+        <!-- nav-icons -->
+        <ul class="nav-icons list-none ">
+            <li>
+                <a href="/components/Wishlist/wishlist.html" class="margin-md-r ">
+                    <i class="fas fa-heart "></i>
+                </a>
+                <div class="whislist-item profile margin-md-r font-sm text-center"> 4</div>
+            </li>
+            <li>
+                <a href="/components/Cart/cart.html" class="margin-md-r ">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <div class="whislist-item profile margin-md-r font-sm text-center"> 3</div>
+            </li>
+            <li> <a href="#" class="profile margin-md-r font-sm  font-bold d-flex jc-ctr align-ctr">LK</a></li>
+            <li>
+                <a href="#" class="btn-clear font-sm padding-xsm">
+                    Logout
+                </a>
+
+            </li>
+        </ul>
+
+        <button class="hamburger crsr-ptr fonts-md">
+            <i class="fas fa-bars "></i>
+        </button>
+    </nav>
+
+    <main class="main padding-lg">
+        <h1 class=" space-md font-lg text-center">My Cart</h1>
+
+        <p class="margin-md-t font-lg text-center">
+            your cart is empty , <a class="link" href="/components/Product/product.html">Shop Now</a>
+        </p>
+
+        <div class="cart-container d-flex jc-sa font-sm ">
+            <div>
+                <ul class="list-none">
+                    <li class="mb-1">
+                        <div class="cart-card d-flex flex-wrap">
+                            <img
+                                src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/xarrival4.png.pagespeed.ic.5Smwo1MlKN.webp" />
+                            <div class=" full-width d-flex flex-col padding-md">
+                                <h3 class="">Men's Stylish shirt</h3>
+                                <p>
+                                    <span class=" font-bold margin-sm-y">₹459 </span>
+                                    <span class="line-through">₹1,849 </span>
+                                </p>
+                                <span class="offer font-bold "> 75% off </span>
+                                <div class="d-flex align-ctr margin-md-t">
+                                    <span class="font-bold margin-sm-r"> Quantity:</span>
+                                    <button class="border-none padding-sm  crsr-ptr border-round ">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <input class=" cart-input margin-sm-x font-bold font-sm " type="number" value="1"
+                                        min="1" />
+                                    <button class="border-none padding-sm  crsr-ptr border-round">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                                <button class="btn btn-info-primary padding-sm font-sm crsr-ptr margin-md-t full-width">
+                                    Remove from Cart
+                                </button>
+                                <button
+                                    class="btn btn-solid-primary padding-sm font-sm crsr-ptr margin-md-t full-width">
+                                    Move to Wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-none">
+                    <li class="mb-1">
+                        <div class="cart-card d-flex flex-wrap">
+                            <img
+                                src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/xarrival4.png.pagespeed.ic.5Smwo1MlKN.webp" />
+                            <div class=" full-width d-flex flex-col padding-md">
+                                <h3 class="">Men's Stylish shirt</h3>
+                                <p>
+                                    <span class=" font-bold margin-sm-y">₹459 </span>
+                                    <span class="line-through">₹1,849 </span>
+                                </p>
+                                <span class="offer font-bold "> 75% off </span>
+                                <div class="d-flex align-ctr margin-md-t">
+                                    <span class="font-bold margin-sm-r"> Quantity:</span>
+                                    <button class="border-none padding-sm  crsr-ptr border-round ">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <input class=" cart-input margin-sm-x font-bold font-sm " type="number" value="1"
+                                        min="1" />
+                                    <button class="border-none padding-sm  crsr-ptr border-round">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                                <button class="btn btn-info-primary padding-sm font-sm crsr-ptr margin-md-t full-width">
+                                    Remove from Cart
+                                </button>
+                                <button
+                                    class="btn btn-solid-primary padding-sm font-sm crsr-ptr margin-md-t full-width">
+                                    Move to Wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-none">
+                    <li class="mb-1">
+                        <div class="cart-card d-flex flex-wrap">
+                            <img
+                                src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/xarrival4.png.pagespeed.ic.5Smwo1MlKN.webp" />
+                            <div class=" full-width d-flex flex-col padding-md">
+                                <h3 class="">Men's Stylish shirt</h3>
+                                <p>
+                                    <span class=" font-bold margin-sm-y">₹459 </span>
+                                    <span class="line-through">₹1,849 </span>
+                                </p>
+                                <span class="offer font-bold "> 75% off </span>
+                                <div class="d-flex align-ctr margin-md-t">
+                                    <span class="font-bold margin-sm-r"> Quantity:</span>
+                                    <button class="border-none padding-sm  crsr-ptr border-round ">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <input class=" cart-input margin-sm-x font-bold font-sm " type="number" value="1"
+                                        min="1" />
+                                    <button class="border-none padding-sm  crsr-ptr border-round">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                                <button class="btn btn-info-primary padding-sm font-sm crsr-ptr margin-md-t full-width">
+                                    Remove from Cart
+                                </button>
+                                <button
+                                    class="btn btn-solid-primary padding-sm font-sm crsr-ptr margin-md-t full-width">
+                                    Move to Wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class=" price-card padding-md margin-md-b">
+                <div>
+                    <h3 class="text-center"> PRICE DETAILS </h3>
+                    <div class="d-flex jc-sb margin-md ">
+                        <span class="font-bold">Price (3 items)</span>
+                        <span>₹ 4,478</span>
+                    </div>
+                    <div class="d-flex jc-sb margin-md">
+                        <span class="font-bold ">Discount</span> <span>₹ 2,984</span>
+                    </div>
+                    <div class="d-flex jc-sb margin-md">
+                        <span class="font-bold">Delivery Charges</span>
+                        <span>₹ 500</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex jc-sb margin-md">
+                        <h2>Total amount</h2>
+                        <span class="font-bold">₹ 1,994</span>
+                    </div>
+
+                    <p>You will save ₹ 2,984 on this purchase</p>
+
+                    <button class="btn btn-solid-primary padding-xsm fonts-md full-width crsr-ptr margin-sm-t">
+                        Place Order
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <div class="footer-heading">Quick Links</div>
+
+                <ul class="quick-links">
+                    <li>
+                        <a href="/components/Home/home.css">Home</a>
+                    </li>
+                    <li>
+                        <a href="/components/Product/product.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="/components/Cart/cart.html">My Cart</a>
+                    </li>
+                    <li>
+                        <a href="/components/Wishlist/wishlist.html">My Wish List</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="footer-heading text-center">Connect with me</div>
+
+                <ul class="social-icons">
+                    <li>
+                        <a href="/"> <i class="fab fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href=""> <i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href=""> <i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=""> <i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

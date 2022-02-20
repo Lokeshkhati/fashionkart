@@ -1,0 +1,42 @@
+@import url("/main.css");
+
+:root {
+  --primary-color: #6366f1;
+  --white-color: #ffffff;
+  --light-color: #f6f8fa;
+  --light-gray: #f1f3f4;
+  --bg-color: #f6f8fc;
+  --border-color: #e2e8f0;
+  --dark-gray: #6b7280;
+  --dark-color: #1d2547;
+  --rating-color: #f97316;
+  --green-color: #15803d;
+  --danger-color: red;
+  --light-shadow: 0 5px 15px rgba(77, 77, 77, 0.1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+  margin-bottom: 8rem;
+}
+.sm-logo {
+  font-family: "Lobster", cursive;
+  color: var(--primary-color);
+  letter-spacing: 1.2px;
+}

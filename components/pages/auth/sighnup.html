@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SlickUI -->
+    <link rel="stylesheet" href="https://slickui-component-library.netlify.app/style.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="nav d-flex jc-sb align-ctr">
+        <a href="/components/Home/home.html" class="logo font-lg ">
+            Fashionkart
+        </a>
+        <ul class="nav-links list-none ">
+            <li>
+                <a href="/components/Home/home.html" class="fonts-md margin-sm">Home</a>
+            </li>
+            <li>
+                <a href="/components/Product/product.html" class="fonts-md margin-sm">Products</a>
+            </li>
+            <li>
+                <a href="/components/Wishlist/wishlist.html" class="fonts-md margin-sm">Wishlist</a>
+            </li>
+            <li>
+                <a href="/components/Cart/cart.html" class="fonts-md margin-sm">Cart</a>
+            </li>
+            <li>
+                <a href="/components/Login/Login.html" class="fonts-md margin-sm">Login</a>
+
+            </li>
+        </ul>
+
+        <button class="hamburger">
+            <i class="fas fa-bars "></i>
+        </button>
+    </nav>
+
+    <div class="login-container d-flex jc-ctr align-ctr font-sm">
+        <div class=" login padding-md">
+            <div class="text-center">
+                <h2> Sign Up </h2>
+            </div>
+            <form>
+
+                <label class="label margin-sm-t font-sm font-bold">
+                    First Name
+                    <span class="required ">*</span>
+                </label>
+                <input type="text" class="login-input font-sm" required />
+
+                <label class="label margin-sm-t font-sm font-bold">
+                    Last Name
+                    <span class="required ">*</span>
+                </label>
+                <input type="text" class="login-input" required />
+                <label class="label margin-sm-t font-sm font-bold">
+                    Email
+                    <span class="required ">*</span>
+                </label>
+                <input type="email" class="login-input" required />
+
+                <label class="label margin-sm-t font-sm font-bold">
+                    Password
+                    <span class="required ">*</span>
+                </label>
+                <input type="password" class="login-input" required />
+                <div class="login-msg margin-sm-t font-sm">
+                    Password should be of 6 characters (including one letter &
+                    number)
+                </div>
+                <button class=" login-btn btn btn-solid-priamary padding-xsm fonts-md margin-md-y crsr-ptr ">Sign
+                    Up</button>
+            </form>
+            <div class="text-center">
+                Already have an account
+                <a href="/components/Login/Login.html" class="join-now">
+                    Sign in
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
