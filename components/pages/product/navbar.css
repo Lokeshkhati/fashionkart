@@ -1,0 +1,62 @@
+.nav {
+  min-height: 7rem;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  box-shadow: var(--light-shadow);
+  background-color: var(--light-color);
+}
+
+.logo {
+  color: var(--primary-color);
+  font-family: "Lobster", cursive;
+  letter-spacing: 2px;
+}
+.nav-links {
+  display: none;
+}
+.nav-icons a {
+  color: var(--light-color);
+}
+.nav-icons i {
+  font-size: 2.8rem;
+  color: var(--dark-gray);
+}
+.profile {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+.hamburger {
+  background: transparent;
+  border-color: transparent;
+}
+.hamburger i {
+  color: var(--dark-color);
+}
+@media screen and (min-width: 600px) {
+  .logo {
+    margin-left: 5rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+  }
+  .nav-links a {
+    color: var(--dark-color);
+  }
+  .nav-links a:hover {
+    color: var(--primary-color);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav-icons {
+    display: none;
+  }
+}

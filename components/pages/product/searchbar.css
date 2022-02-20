@@ -1,0 +1,31 @@
+.searchbar-container {
+  width: 100%;
+  max-width: 50rem;
+  margin: 10rem auto;
+}
+.search-input::placeholder {
+  font-size: 1.5rem;
+}
+.search-input {
+  width: 100%;
+  height: 4rem;
+  outline: none;
+  border: 1px solid var(--white-color);
+  border-radius: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px 0px;
+}
+.search-btn {
+  margin-left: -4rem;
+  background: transparent;
+  outline: none;
+}
+.search-icon {
+  color: var(--dark-color);
+}
+
+@media screen and (min-width: 648px) {
+  .searchbar-container {
+    margin: 12rem auto;
+  }
+}
