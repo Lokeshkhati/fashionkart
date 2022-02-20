@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <!-- SlickUI -->
+    <link rel="stylesheet" href="https://slickui-component-library.netlify.app/style.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="nav d-flex jc-sb align-ctr">
+        <a href="/components/Home/home.html" class="logo font-lg">
+            Fashionkart
+        </a>
+        <ul class="nav-links  list-none  d-flex">
+            <li>
+                <a href="/components/Home/home.html" class="fonts-md margin-sm">Home</a>
+            </li>
+            <li>
+                <a href="./product.html" class="fonts-md margin-sm">Products</a>
+            </li>
+            <li>
+                <a href="/components/Wishlist/wishlist.html" class="fonts-md margin-sm">Wishlist</a>
+            </li>
+            <li>
+                <a href="/components/Cart/cart.html" class="fonts-md margin-sm">Cart</a>
+            </li>
+        </ul>
+        <!-- nav-icons -->
+        <ul class="nav-icons list-none ">
+            <li>
+                <a href="/components/Wishlist/wishlist.html" class="margin-md-r ">
+                    <i class="fas fa-heart "></i>
+                </a>
+                <div class="whislist-item profile margin-md-r font-sm text-center"> 4</div>
+            </li>
+            <li>
+                <a href="/components/Cart/cart.html" class="margin-md-r ">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <div class="whislist-item profile margin-md-r font-sm text-center"> 3</div>
+            </li>
+            <li> <a href="#" class="profile margin-md-r font-sm  font-bold d-flex jc-ctr align-ctr">LK</a></li>
+            <li>
+                <a href="#" class="btn-clear font-sm padding-xsm">
+                    Logout
+                </a>
+
+            </li>
+        </ul>
+
+        <button class="hamburger crsr-ptr fonts-md">
+            <i class="fas fa-bars "></i>
+        </button>
+    </nav>
+
+
+    <!-- SEARCHBAR -->
+    <section class="searchbar-container">
+        <div class=" d-flex jc-ctr align-ctr ">
+            <input class="search-input padding-md" type="text" placeholder="Search Products" value="" />
+            <button class="search-btn border-none crsr-ptr " type="submit">
+                <i class="fas fa-search search-icon font-sm"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- FILTERS & PRODUCTS -->
+    <div class="container">
+        <div class="filter-container margin-sm-l">
+            <div class="d-flex jc-sb align-ctr">
+                <span>Filters</span>
+                <button class="btn-clear crsr-ptr padding-xsm border-none font-sm">Clear All</button>
+            </div>
+            <div class="divider">
+            </div>
+            <fieldset class="border-none ">
+                <legend class="font-bold"> Price Sort by </legend>
+                <div class="product-brand">
+                    <input type="radio" />
+                    <label> Low to High </label>
+                </div>
+                <div class="product-brand">
+                    <input type="radio" />
+                    <label> High to Low </label>
+                </div>
+            </fieldset>
+            <div class="divider">
+            </div>
+            <fieldset class="border-none ">
+                <legend class="font-bold"> Availability </legend>
+                <div class="product-brand">
+                    <input type="checkbox" />
+                    <label> Include Out of Stock </label>
+                </div>
+                <div class="product-brand">
+                    <input type="checkbox" />
+                    <label> Fast Delivery </label>
+                </div>
+            </fieldset>
+            <div class="divider">
+            </div>
+            <fieldset class="border-none ">
+                <legend class="font-bold"> Category </legend>
+                <div class="product-brand">
+                    <input type="checkbox" />
+                    <label> Men's Clothing</label>
+                </div>
+                <div class="product-brand">
+                    <input type="checkbox" />
+                    <label>Kid's Clothing </label>
+                </div>
+                <div class="product-brand">
+                    <input type="checkbox" />
+                    <label>Women's Clothing </label>
+                </div>
+            </fieldset>
+            <div class="divider">
+            </div>
+            <fieldset class="border-none ">
+                <legend class="font-bold"> Price Range</legend>
+                <div class="d-flex flex-col ">
+                    <input type="range" class="crsr-ptr " />
+                    <label>Rs.950</label>
+                </div>
+            </fieldset>
+            <div class="divider">
+            </div>
+            <fieldset class="border-none ">
+                <div class=" filter-rating d-flex jc-sb margin-xms-y">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                </div>
+                <legend class="font-bold">Ratings</legend>
+                <div class="d-flex flex-col ">
+                    <input type="range" class="crsr-ptr" />
+                </div>
+            </fieldset>
+            <div class="divider">
+            </div>
+        </div>
+
+        <div class="product-container d-flex jc-ctr align-ctr flex-wrap font-sm">
+            <div class="product-card">
+                <i class="far fa-heart wish-icon padding-sm font-lg crsr-ptr"></i>
+                <span class=" product-badge padding-xsm-x">
+                    75% off
+                </span>
+
+                <img class="img-height "
+                    src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/xarrival3.png.pagespeed.ic.6pUhpQWmz8.webp">
+
+                <div class="margin-sm">
+                    <div class="d-flex align-ctr font-bold padding-xsm-b ">
+                        <span>Men's Stylish plain white shirt</span>
+                        <div class="product-rating d-flex jc-ctr align-ctr padding-xsm ">
+                            4.4
+                            <i class="fas fa-star padding-xsm-l"></i>
+                        </div>
+                    </div>
+
+                    <p class="store-name font-bold margin-sm-t">Fashion Store</p>
+                    <p class="margin-sm-y">
+                        <span class=" font-bold margin-sm-r">₹459 </span>
+                        <span class="line-through margin-sm-r">₹1,849 </span>
+                        <span class="offer font-bold"> 75% off </span>
+                    </p>
+                </div>
+                <button class="card-btn btn btn-solid-primary padding-sm btn-width font-sm crsr-ptr">Add to
+                    Cart</button>
+            </div>
+            <div class="product-card">
+                <i class="far fa-heart wish-icon padding-sm font-lg crsr-ptr"></i>
+                <span class=" product-badge padding-xsm-x">
+                    #1 Best Seller
+                </span>
+
+                <img class="img-height "
+                    src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/xarrival4.png.pagespeed.ic.5Smwo1MlKN.webp">
+
+                <div class="margin-sm">
+                    <div class="d-flex align-ctr font-bold padding-xsm-b ">
+                        <span>Men Slim Fit Checkered Spread Collar Casual Shirt</span>
+                        <div class="product-rating d-flex jc-ctr align-ctr padding-xsm ">
+                            4.5
+                            <i class="fas fa-star padding-xsm-l"></i>
+                        </div>
+                    </div>
+
+                    <p class="store-name font-bold margin-sm-t">Fashion Store</p>
+                    <p class="margin-sm-y">
+                        <span class=" font-bold margin-sm-r">₹1078 </span>
+                        <span class="line-through margin-sm-r">₹1,899 </span>
+                        <span class="offer font-bold"> 43% off </span>
+                    </p>
+                </div>
+                <button class="card-btn btn btn-solid-primary padding-sm btn-width font-sm crsr-ptr">Add to
+                    Cart</button>
+            </div>
+
+            <div class="product-card">
+                <i class="far fa-heart wish-icon padding-sm font-lg crsr-ptr"></i>
+                <span class=" product-badge padding-xsm-x">
+                    Deal of the day
+                </span>
+
+                <img class="img-height "
+                    src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/xarrival1.png.pagespeed.ic.Kt8DnYMTCO.webp">
+
+                <div class="margin-sm">
+                    <div class="d-flex align-ctr font-bold padding-xsm-b ">
+                        <span>Full Sleeve Plain Boys Sweatshirt</span>
+                        <div class="product-rating d-flex jc-ctr align-ctr padding-xsm ">
+                            4.1
+                            <i class="fas fa-star padding-xsm-l"></i>
+                        </div>
+                    </div>
+
+                    <p class="store-name font-bold margin-sm-t">Fashion Store</p>
+                    <p class="margin-sm-y">
+                        <span class=" font-bold margin-sm-r">₹244</span>
+                        <span class="line-through margin-sm-r">₹1,999 </span>
+                        <span class="offer font-bold"> 87% off </span>
+                    </p>
+                </div>
+                <button class="card-btn btn btn-solid-primary padding-sm btn-width font-sm crsr-ptr">Add to
+                    Cart</button>
+            </div>
+            <div class="product-card">
+                <i class="far fa-heart wish-icon padding-sm font-lg crsr-ptr"></i>
+                <span class=" product-badge padding-xsm-x">
+                    75% off
+                </span>
+
+                <img class="img-height "
+                    src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/xarrival3.png.pagespeed.ic.6pUhpQWmz8.webp">
+
+                <div class="margin-sm">
+                    <div class="d-flex align-ctr font-bold padding-xsm-b ">
+                        <span>Men's Stylish plain white shirt</span>
+                        <div class="product-rating d-flex jc-ctr align-ctr padding-xsm ">
+                            4.4
+                            <i class="fas fa-star padding-xsm-l"></i>
+                        </div>
+                    </div>
+
+                    <p class="store-name font-bold margin-sm-t">Fashion Store</p>
+                    <p class="margin-sm-y">
+                        <span class=" font-bold margin-sm-r">₹459 </span>
+                        <span class="line-through margin-sm-r">₹1,849 </span>
+                        <span class="offer font-bold"> 75% off </span>
+                    </p>
+                </div>
+                <button class="card-btn btn btn-solid-primary padding-sm btn-width font-sm crsr-ptr">Add to
+                    Cart</button>
+            </div>
+            <div class="product-card">
+                <i class="far fa-heart wish-icon padding-sm font-lg crsr-ptr"></i>
+                <span class=" product-badge padding-xsm-x">
+                    #1 Best Seller
+                </span>
+
+                <img class="img-height "
+                    src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/xarrival4.png.pagespeed.ic.5Smwo1MlKN.webp">
+
+                <div class="margin-sm">
+                    <div class="d-flex align-ctr font-bold padding-xsm-b ">
+                        <span>Men Slim Fit Checkered Spread Collar Casual Shirt</span>
+                        <div class="product-rating d-flex jc-ctr align-ctr padding-xsm ">
+                            4.5
+                            <i class="fas fa-star padding-xsm-l"></i>
+                        </div>
+                    </div>
+
+                    <p class="store-name font-bold margin-sm-t">Fashion Store</p>
+                    <p class="margin-sm-y">
+                        <span class=" font-bold margin-sm-r">₹1078 </span>
+                        <span class="line-through margin-sm-r">₹1,899 </span>
+                        <span class="offer font-bold"> 43% off </span>
+                    </p>
+                </div>
+                <button class="card-btn btn btn-solid-primary padding-sm btn-width font-sm crsr-ptr">Add to
+                    Cart</button>
+            </div>
+
+            <div class="product-card">
+                <i class="far fa-heart wish-icon padding-sm font-lg crsr-ptr"></i>
+                <span class=" product-badge padding-xsm-x">
+                    Deal of the day
+                </span>
+
+                <img class="img-height "
+                    src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/xarrival1.png.pagespeed.ic.Kt8DnYMTCO.webp">
+
+                <div class="margin-sm">
+                    <div class="d-flex align-ctr font-bold padding-xsm-b ">
+                        <span>Full Sleeve Plain Boys Sweatshirt</span>
+                        <div class="product-rating d-flex jc-ctr align-ctr padding-xsm ">
+                            4.1
+                            <i class="fas fa-star padding-xsm-l"></i>
+                        </div>
+                    </div>
+
+                    <p class="store-name font-bold margin-sm-t">Fashion Store</p>
+                    <p class="margin-sm-y">
+                        <span class=" font-bold margin-sm-r">₹244</span>
+                        <span class="line-through margin-sm-r">₹1,999 </span>
+                        <span class="offer font-bold"> 87% off </span>
+                    </p>
+                </div>
+                <button class="card-btn btn btn-solid-primary padding-sm btn-width font-sm crsr-ptr">Add to
+                    Cart</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <div class="footer-heading">Quick Links</div>
+
+                <ul class="quick-links">
+                    <li>
+                        <a href="/components/Home/home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/components/Product/product.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="/components/Cart/cart.html">My Cart</a>
+                    </li>
+                    <li>
+                        <a href="/components/Wishlist/wishlist.html">My Wish List</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="footer-heading text-center">Connect with me</div>
+
+                <ul class="social-icons">
+                    <li>
+                        <a href=""> <i class="fab fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href=""> <i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href=""> <i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=""> <i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
