@@ -47,6 +47,9 @@
   .hamburger {
     display: none;
   }
+  .nav-links{
+    display: flex;
+  }
   
   .nav-links a {
     color: var(--dark-color);
