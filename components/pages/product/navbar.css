@@ -2,7 +2,6 @@
   min-height: 7rem;
   width: 100%;
   top: 0;
-  z-index: 1;
   box-shadow: var(--light-shadow);
   background-color: var(--light-color);
 }
@@ -12,9 +11,7 @@
   font-family: "Lobster", cursive;
   letter-spacing: 2px;
 }
-.nav-links {
-  display: none;
-}
+
 .nav-icons a {
   color: var(--light-color);
 }
@@ -29,13 +26,17 @@
   background-color: var(--primary-color);
 }
 
-.hamburger {
-  background: transparent;
-  border-color: transparent;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--dark-color);
 }
-.hamburger i {
-  color: var(--dark-color);
-}
+
+
 @media screen and (min-width: 600px) {
   .logo {
     margin-left: 5rem;
@@ -46,6 +47,7 @@
   }
   .nav-links {
     display: flex;
+    flex-direction: row;
   }
   .nav-links a {
     color: var(--dark-color);
